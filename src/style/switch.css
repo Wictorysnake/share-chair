@@ -1,0 +1,62 @@
+.mui-switch {
+    width: 2.35rem;
+    height: 1.33rem;
+    position: relative;
+    border: 0.05rem solid #dfdfdf;
+    background-color: #fdfdfd;
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    border-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+    border-bottom-left-radius: 1.0rem;
+    border-bottom-right-radius: 1.0rem;
+    background-clip: content-box;
+    display: inline-block;
+    -webkit-appearance: none;
+    user-select: none;
+    outline: none;
+}
+
+.mui-switch:before {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+    border-bottom-left-radius: 1.0rem;
+    border-bottom-right-radius: 1.0rem;
+    background-color: #fff;
+    box-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.4);
+}
+
+.mui-switch:checked {
+    border-color: #FF6600;
+    box-shadow: #FF6600 0 0 0 0.8rem inset;
+    background-color: #FF6600;
+}
+
+.mui-switch:checked:before {
+    left: 1.09rem;
+}
+
+.mui-switch.mui-switch-animbg {
+    transition: background-color ease 0.4s;
+}
+
+.mui-switch.mui-switch-animbg:before {
+    transition: left 0.3s;
+}
+
+.mui-switch.mui-switch-animbg:checked {
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    background-color: #FF6600;
+    transition: border-color 0.4s, background-color ease 0.4s;
+}
+
+.mui-switch.mui-switch-animbg:checked:before {
+    transition: left 0.3s;
+}

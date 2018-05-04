@@ -1,0 +1,484 @@
+body,ul,li,ol,p,input,textarea,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+body{
+    font-family: "微软雅黑", Verdana, Geneva,arial, sans-serif;
+    color:#ccc;background: #F1F4F7;
+    font-size:0.7rem;
+}
+a{text-decoration: none;color:#ccc;}
+ul,li{list-style:none;}
+img{border:none/*;width:100%;height:100%;*/}
+em,i{font-style:normal}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+input,select,textarea{-webkit-appearance:none;-webkit-tap-highlight-color:rgba(0,0,0,0);border:0;border-radius:0;outline:none;}
+input:focus,textarea:focus{outline:none;}
+input[type="radio"],input[type="checkbox"]{background:transparent;}
+select{background-color:#fff;}
+h1,h2,h3,h4,h5,h6{display:inline-block;font-weight:normal;}
+h6{font-size:12px;}
+h5{font-size:13px;}
+h4{font-size:14px;}
+h3{font-size:15px}
+h2{font-size:16px}
+h1{font-size:17px}
+button {outline: none;border: none;background: none;}
+/*公共类*/
+.hide{display: none !important;}
+.fl{float:left;}
+.fr{float: right;}
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.txt_limit{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  -ms-text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.zan_hide{
+    display: none;
+}
+.tc{
+    text-align:center;
+}
+.tr{
+    text-align:right;
+}
+.tl{
+    text-align: left;
+}
+/* 兼容IE6/7 */
+.clearfix {
+    *zoom: 1;
+}
+/*公共提示层*/
+#tan_wrap{
+    display:none;
+    position:fixed; 
+    top:40%;  
+    text-align:center;
+    margin:0 auto;
+    width:100%;
+    z-index:20;
+}
+#tan{
+    margin:0 auto;
+    text-align:center;
+    background:rgba(0,0,0,.7);
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.5);
+    border-radius:3px;
+    font-size:12px;
+    line-height:18px;
+    color:#fff;
+    padding:5px 10px;
+    width:30%;
+}
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+
+}
+@media only screen and (min-width: 361px) and (max-width: 400px) {
+
+}
+@media only screen and (min-width: 401px) {
+
+}
+/*error情况提示*/
+.error_cont{
+    margin: 0 auto;
+    text-align: center; 
+    margin-bottom: 70px;
+}
+.error_cont .error_img{
+    width: 120px;
+    height: 120px;
+    margin: 85px auto 0px auto;
+    background-color: #efefef;
+    border-radius: 60px;
+    text-align: center; 
+}
+.error_icon{
+    width: 68px;
+    height: 65px;
+    margin-top: 28px;
+    fill: #fff;
+}
+.error_txt {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+.error_cont .go_btn {
+    margin-top: 50px;
+    display: inline-block;
+    width: 145px;
+    height: 44px;
+    background-color: #a4c31d;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+}
+
+/* ----- swiper相关 ----- */
+.swiper-slide {
+    text-align: center;
+    background-color: #fff;
+}
+.swiper-slide img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*  ----- flex相关 ----- */
+.flex-center {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.flex-x-align {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.flex-x-justify {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.flex-y-justify {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.flex-y-align {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+/* ----- 定位相关 ----- */
+.pr {
+    position: relative;
+}
+.border-t10 {
+    border-top: 0.5rem solid #F5F5F5;
+}
+/*--两端对齐占位--*/
+.opacity0{
+	color:rgba(0,0,0,0) !important;
+}
+
+/* ----- 颜色相关 ----- */
+.bg-orange {
+    background: #FF6600;
+}
+.bg-gray {
+    background: rgba(102,102,102,0.55);
+}
+.color-orange {
+    color: #FF6600 !important;
+}
+textarea::-webkit-input-placeholder {
+    color: #999999;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    columns: #999999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #999999;
+}
+input:disabled {
+    background: #FFFFFF;
+}
+
+/* ----- Modal 相关 ----- */
+body.modal-open {
+    position: fixed;
+    width: 100%;
+}
+.modal{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: block;
+}
+.modal .modal-content{
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 0 auto; /*水平居中*/
+    position: relative;
+    top: 50%; /*偏移*/
+    transform: translateY(-50%);
+    width: calc(100% - 1.2rem);
+    box-sizing: border-box;
+}
+.modal  .modal-title{
+    height: 4.2rem;
+    line-height: 4.2rem;
+    font-size: 0.8rem;
+    color: #333333;
+    border-bottom: 1px solid #E1E1E1;
+}
+.modal .title{
+    height: 2.5rem;
+    line-height: 1.25rem;
+    font-size: 0.9rem;
+    color: #333333;
+    border-bottom: 1px solid #E1E1E1;
+    position: relative;
+}
+.modal .title .ic-ic_tishi_closex{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* 一闪而过的灰色弹框 */
+.modal-layer {
+    background: rgba(0,0,0,0);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.modal-layer .layer-content {
+    text-align: center;
+    width: 8rem;
+    min-height: 4rem;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.7);
+    border-radius: 0.5rem;
+    padding: 0 0.7rem;
+    font-size: 0.6rem;
+    color: #FFFFFF;
+    position: relative;
+    top: 50%; /*偏移*/
+    transform: translateY(-50%);
+    margin:0 auto;
+}
+/* 绑定手机号 */
+.modal-bind-mobile .title{
+    margin-bottom: 1rem;
+}
+.modal-bind-mobile .input-box{
+    width: calc(100% - 1.5rem);
+    margin: 0 auto 0.5rem;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 2px;
+    padding: 0.7rem 0 0.7rem 0.7rem;
+    box-sizing: border-box;
+}
+.modal-bind-mobile .input-box .label {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #333333;
+    line-height: 1.1rem;
+    margin-right: 0.5rem;
+}
+.modal-bind-mobile .input-box .icon {
+    display: inline-block;
+    width: 1.0rem;
+    height: 1.0rem;
+    margin-right: 0.5rem;
+}
+.modal-bind-mobile .input-box input{
+    font-size: 0.8rem;
+    color: #000000;
+}
+.modal-bind-mobile .input-box input::-webkit-input-placeholder {
+    color: #BBBBBB;
+}
+.modal-bind-mobile .input-box .check-code{
+    width: calc(100% - 6rem);
+}
+.modal-bind-mobile .input-box .check-code-btn{
+    width: 5rem;
+    border-left: 1px solid #e1e1e1;
+    height: 1rem;
+    font-size: 0.8rem;
+    color: #333333;
+    letter-spacing: 0;
+}
+.modal-bind-mobile .input-box .code-info{
+    display: none;
+    width: 5rem;
+    border-left: 1px solid #e1e1e1;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.7rem;
+    color: #999999;
+    letter-spacing: 0;
+}
+.modal .position_bottom{
+    width: 100%;
+    height: 2.2rem;
+    line-height: 1.1rem;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size:0.8rem;
+}
+/* 删除地址的弹窗 */
+.modal-del-address .btn-wrap {
+    width: 100%;
+    height: 2.5rem;
+    background: #FFFFFF;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.modal-del-address .btn-wrap .cancel-btn,
+.modal-del-address .btn-wrap .sure-btn {
+    width: 50%;
+    height: 100%;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+.modal-del-address .btn-wrap .cancel-btn {
+    color: #999999;
+    border-bottom-left-radius: 4px;
+}
+.modal-del-address .btn-wrap .cancel-btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.5px;
+    height: 100%;
+    background: #E1E1E1;
+}
+.modal-del-address .btn-wrap .sure-btn {
+    color: #333333;
+    border-bottom-right-radius: 4px;
+}
+.modal-del-address .btn-wrap .sure-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.5px;
+    height: 100%;
+    background: #E1E1E1;
+}
+
+/* ----- 滚动相关 ----- */
+
+/*--没数据--*/
+.no-data{
+	display:block;
+	width:100%;
+	font-size:0.7rem;
+	color:#666;
+	text-align:center;
+	line-height:2.5rem;
+}
+/*--load弹层--*/
+.loading-outer{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0);
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+}
+.loading-inner{
+	width:5rem;
+	height:5rem;
+	background:rgba(0,0,0,0.6);
+	border-radius:6px;
+	flex-direction:column;
+	-webkit-flex-direction:column;
+}
+.loading-inner .loading-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    border-bottom-color: transparent;
+}
+.loading-inner span{
+	color:#fff;
+	font-size:0.65rem;
+	margin-top:0.5rem;
+}
+.loading-icon-rorate{
+    -webkit-animation: loadingRorate .6s linear infinite; 
+    animation: loadingRorate .6s linear infinite; 
+}
+/*--旋转动画--*/
+@keyframes loadingRorate {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes loadingRorate {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+/* 上拉到底部的提示 */
+.pullUpBox {
+    width: 100%;
+    height: 2.0rem;
+    background: #F5F5F5;
+}
+.pullUpBox .pullUpLabel {
+    font-size: 0.6rem;
+    color: #666666;
+    line-height: 0.9rem;
+    position: relative;
+}
+.pullUpBox .pullUpLabel:before,
+.pullUpBox .pullUpLabel:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 8px;
+    height: 2px;
+    background: #666666;
+}
+.pullUpBox .pullUpLabel:before {
+    left: 0;
+    margin-left: -12px;
+}
+.pullUpBox .pullUpLabel:after {
+    right: 0;
+    margin-right: -12px;
+}

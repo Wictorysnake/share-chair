@@ -1,0 +1,76 @@
+.icon-home {
+    background: url(../images/ft_ic_home_gray@3x.png) center no-repeat;
+    background-size: 1.25rem 1.25rem;
+}
+.icon-swhz {
+    background: url(../images/ft_ic_hezuo_gray@3x.png) center no-repeat;
+    background-size: 1.05rem 1.05rem;
+}
+.icon-wode {
+    background: url(../images/ft_ic_wo_gray@3x.png) center no-repeat;
+    background-size: 1.25rem 1.25rem;
+}
+.icon-symbol {
+    background: url(../images/logo@3x.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.icon-clock {
+    background: url(../images/clock_gray@3x.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.icon-zhifubao {
+    background: url(../images/icon_alipay@3x.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.icon-weixin {
+    background: url(../images/icon_weixin_zhifu@3x.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.icon-quanma {
+    background: url(../images/ic_quanma@3x.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.icon-radio {
+    background: url(../images/ic_xuanze_no@3x.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.icon-order {
+    background: url(../images/gr_shangpindingdan@3x.png) center no-repeat; 
+    background-size: 100% 100%;
+}
+.icon-news {
+    background: url(../images/gr_xiaoxi@3x.png) center no-repeat; 
+    background-size: 100% 100%;
+}
+.icon-coupon {
+    background: url(../images/gr_qianbao@3x.png) center no-repeat; 
+    background-size: 100% 100%;
+}
+.icon-help {
+    background: url(../images/gr_wenda@3x.png) center no-repeat; 
+    background-size: 100% 100%;
+}
+.icon-star {
+    background: url(../images/gr_shoucang@3x.png) center no-repeat; 
+    background-size: 100% 100%;
+}
+.icon-setting {
+    background: url(../images/gr_shezhi@3x.png) center no-repeat; 
+    background-size: 100% 100%;
+}
+.icon-arrow-right {
+    background: url(../images/arrow_right@3x.png) center no-repeat; 
+    background-size: 100% 100%;
+}
+.icon-male {
+    background: url(../images/icon_male@3x.png) center no-repeat; 
+    background-size: 100% 100%;
+}
+.icon-female {
+    background: url(../images/icon_female@3x.png) center no-repeat; 
+    background-size: 100% 100%;
+}
+.icon-detail {
+    background: url(../images/icon_detail@3x.png) center no-repeat; 
+    background-size: 100% 100%;
+}
